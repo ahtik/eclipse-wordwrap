@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="com.ahtik.wordwrap"
-      label="Wordwrap Feature"
-      version="0.0.2"
+      label="Word Wrap Feature"
+      version="0.0.5"
       provider-name="Ahti Kitsik">
 
-   <description url="http://ahtik.com/blog/category/google-soc/">
-      Virtual (also called &quot;soft&quot;) word wrap feature. Installs new menuitem &quot;Virtual Word Wrap&quot; into all texteditors context menu.
+   <description url="http://ahtik.com/">
+      Word wrap feature. Installs new menuitem &quot;Word Wrap&quot; into all texteditors context menu.
    </description>
 
    <copyright>
-      Copyright (c) 2006 Ahti Kitsik, All rights reserved.
+      Copyright (c) 2006-2011 Ahti Kitsik, All rights reserved.
+
+This program and the accompanying materials are made available
+under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html
    </copyright>
 
    <license url="http://www.eclipse.org/legal/epl-v10.html">
@@ -213,14 +217,14 @@ litigation.
    </license>
 
    <url>
-      <update label="Wordwrap Update Site" url="http://ahtik.com/eclipse-update/"/>
+      <update label="Word Wrap Update Site" url="http://ahtik.com/eclipse-update/"/>
    </url>
 
    <plugin
          id="com.ahtik.wordwrap"
          download-size="4"
          install-size="4"
-         version="0.0.2"
+         version="0.0.5"
          unpack="false"/>
 
 </feature>
