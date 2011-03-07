@@ -10,34 +10,37 @@
          <action
                class="com.ahtik.wordwrap.ToggleWordWrapAction"
                id="com.ahtik.wordwrap.toggleWordWrap"
-               label="%action.label.virtualWordWrap"
+               definitionId="com.ahtik.wordwrap.toggleCommand"
+               label="%action.label.wordwrap"
                menubarPath="additions"
-               state="false"
+               state="false"               
                style="toggle">
          </action>
       </objectContribution>
    </extension>
    
+
       <extension
          point="org.eclipse.ui.commands">
    
       <category
-            name="Visual Word Wrap 6"
-            description="Visual Word Wrap 5"
+            name="Word Wrap"
+            description="Word Wrap"
             id="com.ahtik.wordwrap" />
             
       <command
             categoryId="com.ahtik.wordwrap"
-            description="Visual Word Wrap 8"
-            id="com.ahtik.wordwrap.toggle_command"
-            name="Visual Word Wrap 7"/>
+            description="Word Wrap"
+            id="com.ahtik.wordwrap.toggleCommand"
+            name="Word Wrap"/>
             
       </extension>
+    
 <extension
          point="org.eclipse.ui.handlers">            
       <handler
             class="com.ahtik.wordwrap.ToggleHandler"
-            commandId="com.ahtik.wordwrap.toggle_command">
+            commandId="com.ahtik.wordwrap.toggleCommand">
          <enabledWhen>
             <with
                   variable="activeEditor">
@@ -49,35 +52,12 @@
       </handler>
             
    	</extension>
-   	
+
      <extension point="org.eclipse.ui.bindings">
       <key
-            commandId="com.ahtik.wordwrap.toggle_command"
-            sequence="M1+M2+V"
+            commandId="com.ahtik.wordwrap.toggleCommand"
+            sequence="M1+M3+W"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration" />
    	</extension>
-   	
-   <extension point = "org.eclipse.ui.actionSets">
-	   <actionSet id="com_ahtik_wordwrap_actionSet"
-		   label="%ActionSet.name"
-		   visible="true"
-		   >
-		   
-		   <!--class="com.ahtik.wordwrap.ToggleWordWrapAction"
-			   class="com.ahtik.wordwrap.DelegateProov"		   			   		  
-		   /-->
-					   
-		   <action id="com_ahtik_wordwrap_toggleAction"
-		   definitionId="com.ahtik.wordwrap.toggle_command"
-			   menubarPath="edit/additions"
-			   toolbarPath="com_ahtik_wordwrap/toggle_wordwrap"
-			   label="%ActionSet.label"
-			   tooltip="%ActionSet.tooltip"
-			   icon="icons/wrap16.gif"
-			   state="false"
-			   style="toggle">
-		   </action>
-		   		   
-	   </actionSet>
-   </extension>
+
 </plugin>
