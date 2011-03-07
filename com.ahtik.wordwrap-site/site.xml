@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <description url="http://ahtik.com/wordwrap">
-      Virtual (a.k.a. &quot;soft&quot;) word wrap feature. Wordwrap plugin will break long lines without modifying underying file physically. New menu item &quot;Virtual Word Wrap&quot; is added to editor context menu.
+      Word wrap feature. Wordwrap plugin will break long lines without modifying underying file physically. New menu item &quot;Word Wrap&quot; is added to editor context menu.
 
 
-WARNING! Behaviour of this feature is experimental! Currently it is wrapping properly BUT will make line numbering, active line highlight etc rendering damaged. All damaged line numbers, line highlights etc will be OK after disabling wrap for active editor! The final version will (hopefully) work without any troubles.
+Behaviour of this feature is not perfect! It is wrapping properly but will damage line numbering, active line highlight etc rendering. All  line numbers, line highlights etc will be OK after disabling wrap for active editor.
    </description>
-   <feature url="features/com.ahtik.wordwrap_0.0.2.jar" id="com.ahtik.wordwrap" version="0.0.2">
-      <category name="Virtual Word Wrap"/>
+   <feature url="features/com.ahtik.wordwrap_0.0.5.jar" id="com.ahtik.wordwrap" version="0.0.5">
+      <category name="Word Wrap"/>
    </feature>
-   <category-def name="Virtual Word Wrap" label="Virtual Word Wrap">
+   <category-def name="Word Wrap" label="Word Wrap">
       <description>
-         Virtual (a.k.a. &quot;soft&quot;) word wrap feature. Installs new menuitem &quot;Virtual Word Wrap&quot; into all texteditors context menu.
+         Word wrap feature. Installs new menuitem &quot;Word Wrap&quot; into all texteditors context menu.
       </description>
    </category-def>
 </site>
